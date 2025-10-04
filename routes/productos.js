@@ -59,3 +59,5 @@ router.delete("/productos/:id", async (req, res) => {
     res.status(400).json({ message: "Error al eliminar producto" });
   }
 });
+
+module.exports = router;
