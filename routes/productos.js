@@ -3,10 +3,16 @@ const express = require("express");
 const router = express.Router();
 const Producto = require("../models/Producto");
 
-// Obtener todos los productos
+// Obtener todos los productos con filtro opcional por categoría
 router.get("/productos", async (req, res) => {
   try {
-    const productos = await Producto.find();
+    const { categoria } = req.query; //obtener el valor enviado en la url
+    let productos;
+    if (categoria) {
+      productos = await Producto.find({ categoria });
+    } else {
+      productos = await Producto.find();
+    }
     res.json(productos);
   } catch (error) {
     res.status(500).json({ message: "Error al obtener productos" });
