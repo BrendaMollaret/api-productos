@@ -2,7 +2,7 @@
   "name": "api-productos",
   "version": "1.0.0",
   "description": "api-productos",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
