@@ -1,7 +1,10 @@
 //config/corsOptions.js
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://front-productos.vercel.app"],
+  origin: [
+    "http://localhost:5173",
+    "https://front-funcionesbasicas.vercel.app",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
