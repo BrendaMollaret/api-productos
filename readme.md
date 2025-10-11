@@ -102,7 +102,7 @@ El CORS está configurado para permitir conexiones desde:
 - `http://localhost:5173` (desarrollo local)
 - `https://front-funcionesbasicas.vercel.app` (producción)
 
-## 📱 Estado del Sistema
+## Estado del Sistema
 
 La API incluye un endpoint de estado para verificar la conectividad:
 
