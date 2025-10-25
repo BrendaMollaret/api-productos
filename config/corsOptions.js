@@ -2,7 +2,7 @@
 
 const corsOptions = {
   origin: [
-    "https://productos-frontend.vercel.app/",
+    "https://productos-frontend.vercel.app",
     "https://front-funcionesbasicas.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
